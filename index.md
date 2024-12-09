@@ -16,10 +16,10 @@
       amount: 100,
 
       // Specify environment ID
-      environmentId: 'environment ID',
+      environmentId: '096602aa-a033-4dad-815d-754105dbf6fc',
 
       // Specify billing profile ID
-      billingProfileId: 'billing profile ID',
+      billingProfileId: '1ba91f19-61f9-1c28-e063-ee043c0a3abe',
 
       // Specify gateway names
       paymentGateways: ['Adyen_CC', 'Adyen_DD'],
