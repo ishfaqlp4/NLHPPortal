@@ -28,8 +28,7 @@ html
     };
 
     document.getElementById('executeButton').addEventListener('click', async function() {
-      const securityToken = //'eyJhbGciOiJSUzI1NiJ9.eyJ0eXBlIjoiVVNFUiIsIm9yZ05hbWUiOiJub29ubGlnaHRfZGV2IiwiZW52aXJvbm1lbnRJZCI6IjA5NjYwMmFhLWEwMzMtNGRhZC04MTVkLTc1NDEwNWRiZjZmYyIsImlkZW50aXR5IjoiNDNERjExMkY5ODQxQkMxRjQxM0YiLCJzZXNzaW9uSWQiOiJQZlBXdXh4Uk1yU1hhdFN2SmJCUk5nbFVaRVBNd0xJRWRGc0xlUExzIiwidXNlcklkIjoiMTU2MDY5IiwidXNlcm5hbWUiOiJicC5hcGkudXNlciIsInR0bCI6MTUsInRva2VuVHlwZSI6IkFDQ0VTUyIsImlhdCI6MTczMzg1OTM2NSwiZXhwIjoxNzMzODYwMjY1fQ.lLmFtbvNocc0AMmROnNVJ4g0uV0AXTTh12kqdcN8_UJvRge8d7IYCRKeM16KVuPwk0XsF1vVXefYKlBTNO1lFESbyqQEXtoeZ2627tZpocB8yiHExJpdrAjmB4iNuIP9yGD3o06Q08oTbLeirI6WvEXVFZj1XHH73EyXfvFA5B8TH-pR-YAxkqVfXAk1isH7rut4xl-Szaf4Uft83bYnD8I1uursisGCNaRrav6yhpP84XRJS2PVf1jcRLd7weDjtgafowizZo4dGOc5WcM59dau3CmpBNAseuIOu42GQrUB2-euMCkLFJeSs3cov55-kKnXyqXZoAwCQ0XP3-aJpQ';
-      await getHppSecurityToken();
+      const securityToken = await getHppSecurityToken();
       const script = document.createElement('script');
       script.src = "https://cdn.aws.billingplatform.com/hosted-payments-ui@release/lib.js";
       document.body.append(script);
