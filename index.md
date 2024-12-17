@@ -14,7 +14,7 @@
 
       // Use hosted-payments-ui@1.0.0 to apply exact widget version
       // Or hosted-payments-ui@1 to apply last version from specified version
-      script.src = "https://cdn.aws.billingplatform.com/hosted-payments-ui@1/lib.js";
+      script.src = "https://cdn.aws.billingplatform.com/hosted-payments-ui@release/lib.js";
 
       document.body.append(script);
       script.onload = function () {
